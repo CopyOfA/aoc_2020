@@ -28,5 +28,5 @@ let
                  0 0 0]*v;
         end
     end
-    global p2 = v[1];
+    global answer2 = v[1];
 end
