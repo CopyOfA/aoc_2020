@@ -75,3 +75,4 @@ let
     end
     global answer2 = location, waypoint
 end
+print(string("Total distance: ", sum(abs, answer2[1])))
