@@ -29,6 +29,4 @@ answer1 = both_parts(A, start, 2020)
 ## part 2
 A = make_dict(x)
 start = parse(Int, x[end])
-@time begin
 answer2 = both_parts(A, start, 30000000)
-end
