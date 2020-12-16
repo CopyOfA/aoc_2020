@@ -47,7 +47,7 @@ function get_field_ranges(fields)
     return D
 end
 
-function part2(invalids,fields)
+function part2(invalids,fields,nearby)
     nearby_filt = nearby[invalids.==0]
     N = hcat([parse.(Int, split(ii, ",")) for ii in nearby_filt]...)
     n = size(N,1)
@@ -76,5 +76,5 @@ function part2(invalids,fields)
     return places
 end
 
-field_names = part2(invalids, fields)
+field_names = part2(invalids, fields, nearby)
 answer2 = prod(parse.(Int, split(my_ticket[1], ","))[findall(x -> occursin("departure", x), field_names)])
